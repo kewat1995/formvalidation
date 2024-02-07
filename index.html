@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7e9eae502.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fas fa-paper-plane"></i>
+            <div class="input-gruop">
+                <label for="fname">Name</label>
+                <input type="text" placeholder="Enter name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+            <div class="input-gruop">
+                <label for="number">Phone</label>
+                <input type="number" placeholder="Enter contact no" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+            <div class="input-gruop">
+                <label for="gmail">Gmail </label>
+                <input type="gmail" placeholder="Enter Email" id="contact-gmail" onkeyup="validateEmail()">
+                <span id="gmail-error"></span>
+            </div>
+            <div class="input-gruop">
+                <label for="message"> Message</label>
+<textarea  rows="2"  placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <button type="submit" onclick="return validteForm()">submit</button>
+            <span id="submit-error"></span>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
